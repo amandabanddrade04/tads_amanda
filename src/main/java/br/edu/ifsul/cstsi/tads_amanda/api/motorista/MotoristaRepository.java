@@ -1,4 +1,8 @@
 package br.edu.ifsul.cstsi.tads_amanda.api.motorista;
 
-public interface MotoristaRepository extends org.springframework.data.jpa.repository.JpaRepository<br.edu.ifsul.cstsi.tads_amanda.api.motorista.Motorista, java.lang.Integer> {
-  }
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+@RepositoryRestResource(exported = false)
+public interface MotoristaRepository extends JpaRepository<Motorista, Integer> {
+}

@@ -1,4 +1,8 @@
 package br.edu.ifsul.cstsi.tads_amanda.api.corrida;
 
-public interface CorridaRepository extends org.springframework.data.jpa.repository.JpaRepository<br.edu.ifsul.cstsi.tads_amanda.api.corrida.Corrida, java.lang.Integer> {
-  }
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+
+public interface CorridaRepository extends JpaRepository<Corrida, Integer> {
+}
