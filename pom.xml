@@ -53,6 +53,13 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- Para o data source no perfil Produção (conector do banco de dados) -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.2.0</version>
+        </dependency>
+
         <!-- Para adicionar segurança no app -->
         <!-- Spring Security é uma estrutura que fornece autenticação, autorização e proteção contra ataques comuns
             https://docs.spring.io/spring-boot/docs/current/reference/html/web.html#web.security -->
@@ -77,6 +84,8 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+
     </dependencies>
 
     <build>
